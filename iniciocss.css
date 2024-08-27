@@ -1,8 +1,19 @@
 /* Estilos generales */
+html,
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+}
+
+/* Configuración del contenedor principal */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* El contenedor principal toma todo el espacio disponible menos el espacio ocupado por el footer */
+main {
+  flex: 1;
 }
 
 /* Navbar */
@@ -154,7 +165,8 @@ body {
   font-size: 18px;
   line-height: 1.8;
 }
-.modal_texto h5{
+
+.modal_texto h5 {
   font-size: 20px;
   text-align: center;
 }
@@ -175,8 +187,43 @@ body {
 }
 
 /* Footer */
+/* Footer */
 footer {
   padding: 40px 0;
+  background-color: #343a40;
+  /* Color de fondo oscuro */
+  color: white;
+}
+
+/* Otros estilos existentes */
+.section_frase {
+  padding: 60px 0;
+  background-color: #17a2b8;
+  color: #fff;
+  text-align: center;
+}
+
+.presentacion_texto {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.presentacion_texto h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.presentacion_texto p {
+  color: rgb(65, 48, 48);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.presentacion_texto h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
 }
 
 footer h4 {
