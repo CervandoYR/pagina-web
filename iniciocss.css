@@ -3,6 +3,9 @@ html,
 body {
   height: 100%;
   margin: 0;
+  overflow-x: hidden; /* Esto puede ayudar a evitar el desbordamiento horizontal */
+  
+
 }
 
 /* Configuración del contenedor principal */
@@ -42,6 +45,8 @@ main {
 
 .section_presentacion .carousel-item {
   height: 500px;
+  flex: 1 0 auto; /* Asegura que los elementos no se expandan fuera del contenedor */
+
 }
 
 @media (max-width: 1200px) {
