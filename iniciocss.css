@@ -385,13 +385,16 @@ footer a:hover {
   width: 100%;
   display: block;
   position: relative;
+  transition: transform 0.3s ease;
 }
-
+.maraton-container img:hover {
+  transform: scale(1.05);
+}
 .maraton-overlay {
   position: absolute;
   bottom: 0;
-  left: 0;
-  width: 100%;
+  left: 3px;
+  width: 430px;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   text-align: center;
@@ -399,7 +402,7 @@ footer a:hover {
   font-size: 18px;
   font-weight: bold;
   transition: transform 0.3s ease;
-  transform: translateY(100%);
+  transform: translateY(0%);
 }
 
 .maraton-container:hover .maraton-overlay {
@@ -411,13 +414,16 @@ footer a:hover {
   width: 100%;
   display: block;
   position: relative;
+  transition: transform 0.3s ease;
 }
-
+.ajedrez-container img:hover {
+  transform: scale(1.05);
+}
 .ajedrez-overlay {
   position: absolute;
   bottom: 0;
-  left: 0;
-  width: 100%;
+  left: auto;
+  width: 418px;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   text-align: center;
@@ -425,7 +431,7 @@ footer a:hover {
   font-size: 18px;
   font-weight: bold;
   transition: transform 0.3s ease;
-  transform: translateY(100%);
+  transform: translateY(0%);
 }
 
 .ajedrez-container:hover .ajedrez-overlay {
@@ -437,13 +443,17 @@ footer a:hover {
   width: 100%;
   display: block;
   position: relative;
+  transition: transform 0.3s ease;
 }
+.feria-container img:hover {
+  transform: scale(1.05);
 
+}
 .feria-overlay {
   position: absolute;
   bottom: 0;
-  left: 0;
-  width: 100%;
+  left: 10px;
+  width: 418px;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   text-align: center;
@@ -451,11 +461,12 @@ footer a:hover {
   font-size: 18px;
   font-weight: bold;
   transition: transform 0.3s ease;
-  transform: translateY(100%);
+  transform: translateY(0%);
 }
 
 .feria-container:hover .feria-overlay {
   transform: translateY(0);
+  
 }
 
 
