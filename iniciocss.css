@@ -343,3 +343,69 @@ footer a:hover {
   font-size: 1.5rem;
   font-weight: normal;
 }
+
+/* Estilos para Maratón */
+.maraton-container {
+  position: relative;
+}
+
+.maraton-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.maraton-overlay p {
+  margin: 0;
+}
+
+/* Estilos para Torneo de Ajedrez */
+.ajedrez-container {
+  position: relative;
+}
+
+.ajedrez-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.ajedrez-overlay p {
+  margin: 0;
+}
+
+/* Estilos para Feria de Ciencias */
+.feria-container {
+  position: relative;
+}
+
+.feria-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.feria-overlay p {
+  margin: 0;
+}
