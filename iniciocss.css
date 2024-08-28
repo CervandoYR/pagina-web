@@ -3,8 +3,9 @@ html,
 body {
   height: 100%;
   margin: 0;
-  overflow-x: hidden; /* Esto puede ayudar a evitar el desbordamiento horizontal */
-  
+  overflow-x: hidden;
+  /* Esto puede ayudar a evitar el desbordamiento horizontal */
+
 
 }
 
@@ -45,7 +46,8 @@ main {
 
 .section_presentacion .carousel-item {
   height: 500px;
-  flex: 1 0 auto; /* Asegura que los elementos no se expandan fuera del contenedor */
+  flex: 1 0 auto;
+  /* Asegura que los elementos no se expandan fuera del contenedor */
 
 }
 
@@ -76,7 +78,7 @@ main {
 .modal-content {
   display: flex;
   flex-direction: column;
-  max-height: 90vh;
+  max-height: 98vh;
 }
 
 .modal-body {
@@ -112,7 +114,7 @@ main {
 .modal_texto {
   padding: 20px;
   overflow-y: auto;
-  max-height: 70vh;
+  max-height: 80vh;
 }
 
 
@@ -387,14 +389,16 @@ footer a:hover {
   position: relative;
   transition: transform 0.3s ease;
 }
+
 .maraton-container img:hover {
   transform: scale(1.05);
 }
+
 .maraton-overlay {
   position: absolute;
   bottom: 0;
   left: 3px;
-  width: 430px;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   text-align: center;
@@ -416,14 +420,16 @@ footer a:hover {
   position: relative;
   transition: transform 0.3s ease;
 }
+
 .ajedrez-container img:hover {
   transform: scale(1.05);
 }
+
 .ajedrez-overlay {
   position: absolute;
   bottom: 0;
   left: auto;
-  width: 418px;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   text-align: center;
@@ -445,15 +451,17 @@ footer a:hover {
   position: relative;
   transition: transform 0.3s ease;
 }
+
 .feria-container img:hover {
   transform: scale(1.05);
 
 }
+
 .feria-overlay {
   position: absolute;
   bottom: 0;
   left: 10px;
-  width: 418px;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   text-align: center;
@@ -466,7 +474,7 @@ footer a:hover {
 
 .feria-container:hover .feria-overlay {
   transform: translateY(0);
-  
+
 }
 
 
@@ -581,6 +589,7 @@ footer a:hover {
 .video_informativo {
   background-color: blue;
 }
+
 /*Secion de mision valor */
 .section_mision_vision {
   display: flex;
