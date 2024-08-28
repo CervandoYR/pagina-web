@@ -176,10 +176,6 @@ main {
   padding: 60px 0;
 }
 
-/* Sección Frase */
-.section_frase {
-  padding: 60px 0;
-}
 
 /* Sección Video */
 .section_video {
@@ -195,7 +191,7 @@ footer {
   color: white;
 }
 
-/* Otros estilos existentes */
+
 .section_frase {
   padding: 60px 0;
   background-color: #17a2b8;
@@ -271,6 +267,30 @@ footer a:hover {
   font-weight: bold;
 }
 
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    /* Ocultamos los enlaces por defecto */
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links.active {
+    display: flex;
+    /* Mostramos los enlaces cuando el menú está activo */
+  }
+
+  .colegio_Menu {
+    display: block;
+    /* Mostramos el icono del menú en pantallas pequeñas */
+    cursor: pointer;
+  }
+}
+
+
+
 /* Responsivo para sección de imágenes */
 @media (max-width: 1200px) {
   .section_imagenes .imagen-col {
@@ -344,8 +364,21 @@ footer a:hover {
   font-weight: normal;
 }
 
+/* Estilos generales para las imágenes */
+.section_imagenes .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section_imagenes .container .col-md-4 {
+  position: relative;
+  overflow: hidden;
+}
+
 /* Estilos para Maratón */
-.maraton-container {
+.maraton-container img {
+  width: 100%;
+  display: block;
   position: relative;
 }
 
@@ -360,14 +393,18 @@ footer a:hover {
   padding: 10px 0;
   font-size: 18px;
   font-weight: bold;
+  transition: transform 0.3s ease;
+  transform: translateY(100%);
 }
 
-.maraton-overlay p {
-  margin: 0;
+.maraton-container:hover .maraton-overlay {
+  transform: translateY(0);
 }
 
 /* Estilos para Torneo de Ajedrez */
-.ajedrez-container {
+.ajedrez-container img {
+  width: 100%;
+  display: block;
   position: relative;
 }
 
@@ -382,14 +419,18 @@ footer a:hover {
   padding: 10px 0;
   font-size: 18px;
   font-weight: bold;
+  transition: transform 0.3s ease;
+  transform: translateY(100%);
 }
 
-.ajedrez-overlay p {
-  margin: 0;
+.ajedrez-container:hover .ajedrez-overlay {
+  transform: translateY(0);
 }
 
 /* Estilos para Feria de Ciencias */
-.feria-container {
+.feria-container img {
+  width: 100%;
+  display: block;
   position: relative;
 }
 
@@ -404,8 +445,204 @@ footer a:hover {
   padding: 10px 0;
   font-size: 18px;
   font-weight: bold;
+  transition: transform 0.3s ease;
+  transform: translateY(100%);
 }
 
-.feria-overlay p {
-  margin: 0;
+.feria-container:hover .feria-overlay {
+  transform: translateY(0);
+}
+
+
+/*section escolar*/
+
+.section_escolar {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  /* Color de fondo opcional */
+}
+
+.escolar_div {
+  text-align: center;
+}
+
+.grados {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.grado {
+  position: relative;
+  width: calc(33.333% - 20px);
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.grado:hover {
+  transform: scale(1.05);
+}
+
+.grado img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.titulo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+/*section deportes*/
+
+.section_deportes {
+  padding: 40px 20px;
+  background-color: #e0e0e0;
+}
+
+.deportes_div {
+  text-align: center;
+}
+
+.deportes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.deporte {
+  position: relative;
+  width: calc(25% - 20px);
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.deporte:hover {
+  transform: scale(1.05);
+}
+
+.deporte img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.titulo-deporte {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+.personal {
+  display: flex;
+  background-color: green;
+}
+
+.video_informativo {
+  background-color: blue;
+}
+/*Secion de mision valor */
+.section_mision_vision {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  /* Ajusta la altura según sea necesario */
+  background-color: #f0f0f0;
+  /* Color de fondo de la sección */
+  padding: 20px;
+}
+
+.section_botones {
+  display: flex;
+  /* Utiliza flexbox */
+  justify-content: center;
+  /* Centra los botones horizontalmente */
+  align-items: center;
+  /* Centra los botones verticalmente */
+  height: 50vh;
+  /* Altura de la sección */
+  gap: 20px;
+  /* Espacio entre los botones */
+  margin-top: 50px;
+  /* Margen superior */
+}
+
+.btn-grande {
+  position: relative;
+  /* Para posicionar el texto sobre la imagen */
+  width: 300px;
+  /* Ancho del botón */
+  height: 200px;
+  /* Altura del botón */
+  border: none;
+  /* Sin borde */
+  border-radius: 10px;
+  /* Bordes redondeados */
+  cursor: pointer;
+  /* Cursor de mano */
+  overflow: hidden;
+  /* Oculta el desbordamiento del contenido */
+}
+
+.btn-grande img {
+  width: 100%;
+  /* Imagen ocupa todo el ancho */
+  height: 100%;
+  /* Imagen ocupa todo el alto */
+  object-fit: cover;
+  /* Asegura que la imagen cubra todo el botón */
+  transition: transform 0.3s ease;
+  /* Transición suave en hover */
+}
+
+.btn-grande:hover img {
+  transform: scale(1.1);
+  /* Zoom en la imagen al pasar el mouse */
+}
+
+.btn-grande span {
+  position: absolute;
+  /* Texto sobre la imagen */
+  bottom: 0;
+  /* Alineado al fondo */
+  left: 0;
+  /* Alineado a la izquierda */
+  width: 100%;
+  /* Ocupa todo el ancho del botón */
+  text-align: center;
+  /* Centrar el texto */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fondo semitransparente */
+  color: white;
+  /* Color del texto */
+  font-size: 20px;
+  /* Tamaño del texto */
+  padding: 10px 0;
+  /* Espaciado alrededor del texto */
 }
