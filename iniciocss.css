@@ -394,8 +394,7 @@ footer a:hover {
   position: absolute;
   bottom: 0;
   left: 3px;
-  width: 100%; /* Ajusta el ancho al 100% del contenedor */
-  max-width: 430px; /* Ancho máximo para pantallas grandes */
+  width: 430px;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   text-align: center;
@@ -405,6 +404,7 @@ footer a:hover {
   transition: transform 0.3s ease;
   transform: translateY(0%);
 }
+
 .maraton-container:hover .maraton-overlay {
   transform: translateY(0);
 }
@@ -422,9 +422,8 @@ footer a:hover {
 .ajedrez-overlay {
   position: absolute;
   bottom: 0;
-  left: 5px; /* Ajusta al borde izquierdo del contenedor */
-  width: 100%; /* Ajusta el ancho al 100% del contenedor */
-  max-width: 428px; /* Ancho máximo para pantallas grandes */
+  left: auto;
+  width: 418px;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   text-align: center;
@@ -434,6 +433,7 @@ footer a:hover {
   transition: transform 0.3s ease;
   transform: translateY(0%);
 }
+
 .ajedrez-container:hover .ajedrez-overlay {
   transform: translateY(0);
 }
@@ -447,13 +447,13 @@ footer a:hover {
 }
 .feria-container img:hover {
   transform: scale(1.05);
+
 }
 .feria-overlay {
   position: absolute;
   bottom: 0;
   left: 10px;
-  width: 100%; /* Ajusta el ancho al 100% del contenedor */
-  max-width: 418px; /* Ancho máximo para pantallas grandes */
+  width: 418px;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   text-align: center;
@@ -463,29 +463,11 @@ footer a:hover {
   transition: transform 0.3s ease;
   transform: translateY(0%);
 }
+
 .feria-container:hover .feria-overlay {
   transform: translateY(0);
+  
 }
-
-/* Consultas de medios para diseño responsivo */
-@media (max-width: 768px) {
-  .maraton-overlay,
-  .ajedrez-overlay,
-  .feria-overlay {
-    font-size: 16px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
-    padding: 8px 0; /* Relleno reducido en pantallas pequeñas */
-  }
-}
-
-@media (max-width: 480px) {
-  .maraton-overlay,
-  .ajedrez-overlay,
-  .feria-overlay {
-    font-size: 14px; /* Tamaño de fuente aún más pequeño en pantallas muy pequeñas */
-    padding: 6px 0; /* Relleno aún más reducido en pantallas muy pequeñas */
-  }
-}
-
 
 
 /*section escolar*/
