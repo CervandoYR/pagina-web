@@ -371,110 +371,79 @@ footer a:hover {
   font-weight: normal;
 }
 
-/* Estilos generales para las imágenes */
+/* Estilos generales para la sección de eventos */
+.section_imagenes {
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  /* Cambia el color de fondo si es necesario */
+}
+
 .section_imagenes .container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.section_imagenes .container .col-md-4 {
-  position: relative;
-  overflow: hidden;
-}
-
-/* Estilos para Maratón */
-.maraton-container img {
+.evento1 {
   width: 100%;
   display: block;
   position: relative;
   transition: transform 0.3s ease;
 }
 
-.maraton-container img:hover {
+.evento1:hover{
   transform: scale(1.05);
 }
 
-.maraton-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 3px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  font-size: 18px;
-  font-weight: bold;
-  transition: transform 0.3s ease;
-  transform: translateY(0%);
-}
-
-.maraton-container:hover .maraton-overlay {
-  transform: translateY(0);
-}
-
-/* Estilos para Torneo de Ajedrez */
-.ajedrez-container img {
+.evento2 {
   width: 100%;
   display: block;
   position: relative;
   transition: transform 0.3s ease;
 }
 
-.ajedrez-container img:hover {
+.evento2:hover{
   transform: scale(1.05);
 }
 
-.ajedrez-overlay {
-  position: absolute;
-  bottom: 0;
-  left: auto;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  font-size: 18px;
-  font-weight: bold;
-  transition: transform 0.3s ease;
-  transform: translateY(0%);
-}
 
-.ajedrez-container:hover .ajedrez-overlay {
-  transform: translateY(0);
-}
-
-/* Estilos para Feria de Ciencias */
-.feria-container img {
+.evento3 {
   width: 100%;
   display: block;
   position: relative;
   transition: transform 0.3s ease;
 }
 
-.feria-container img:hover {
+.evento3:hover{
   transform: scale(1.05);
-
 }
 
-.feria-overlay {
+
+.evento:hover {
+  transform: scale(1.05);
+}
+
+.evento img {
+  width: 100%;
+  /* Mantiene el tamaño original de la imagen */
+  height: auto;
+  /* Asegura que la relación de aspecto se mantenga */
+  display: block;
+}
+
+.titulo-evento {
   position: absolute;
   bottom: 0;
-  left: 10px;
+  left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
   text-align: center;
-  padding: 10px 0;
+  padding: 15px;
   font-size: 18px;
   font-weight: bold;
-  transition: transform 0.3s ease;
-  transform: translateY(0%);
-}
-
-.feria-container:hover .feria-overlay {
-  transform: translateY(0);
-
+  box-sizing: border-box;
 }
 
 
