@@ -13,6 +13,27 @@
 </head>
 
 <body>
+
+    <!-- Modal de Bienvenida -->
+    <div class="modal-bienvenida">
+        <div class="modal fade" id="inicioModal" tabindex="-1" aria-labelledby="inicioModalLabel" aria-hidden="true"
+            data-bs-backdrop="static" data-bs-keyboard="false">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="inicioModalLabel">¡Bienvenido!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        Bienvenido a nuestro sitio web educativo.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--navbar responsive-->
     <nav class="navbar-expand-lg navbar-light navbar"> <!-- el bg son para los colores de fondo, primordiales con bootstrap
         estos se quitan para dejar ver el css que nosotros le damos -->
@@ -50,24 +71,7 @@
 
 
     <main>
-        <!-- Modal de Bienvenida -->
-        <div class="modal fade" id="inicioModal" tabindex="-1" aria-labelledby="inicioModalLabel" aria-hidden="true"
-            data-bs-backdrop="static" data-bs-keyboard="false">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="inicioModalLabel">¡Bienvenido!</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                    </div>
-                    <div class="modal-body">
-                        Bienvenido a nuestro sitio web educativo.
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+
 
         <section class="sect_presentacion">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
