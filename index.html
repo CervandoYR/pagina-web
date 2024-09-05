@@ -34,10 +34,9 @@
             </div>
         </div>
     </div>
-    <!--navbar responsive-->
-    <nav class="navbar-expand-lg navbar-light navbar"> <!-- el bg son para los colores de fondo, primordiales con bootstrap
-        estos se quitan para dejar ver el css que nosotros le damos -->
-        <div class="container-fluid ">
+    <!-- Navbar responsive -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
             <div class="nav_logo">
                 <a href="#"><img class="nav_log_img" src="imagenes/logo_naciones_unidas.png" alt="logo del colegio"></a>
             </div>
@@ -47,23 +46,23 @@
             </button>
             <div class="collapse navbar-collapse nav_links" id="navbarNav">
                 <ul class="navbar-nav ms-auto lista-links">
-                    <li class="nav-item"><a class="nav-link nav-link-in" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link nav-link-in" href="#">Propuesta Educativa</a></li>
-                    <li class="nav-item"><a class="nav-link nav-link-in" href="#">Admision</a></li>
-                    <li class="nav-item"><a class="nav-link nav-link-in" href="#">Documentos</a></li>
-                    <li class="nav-item"><a class="nav-link nav-link-in" href="#">Contactanos</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-in" href="#quienes_somos">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-in" href="#eventos">Eventos</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-in" href="#valores">Valores</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-in" href="#niveles">Niveles</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-in" href="#deportes">Deportes</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-in" href="#documentos">contactanos</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-in" href="#documentos">Documentos</a></li>
                 </ul>
-            </div>
-            <div class="collapse navbar-collapse nav_icons" id="navbarNav">
                 <ul class="navbar-nav ms-auto lista-icons">
                     <li class="nav-item nav-item-icon"><a class="nav-link" href="#"><i
-                                class="fa-brands fa-facebook-f nav_icono"></i> </a></li>
+                                class="fa-brands fa-facebook-f nav_icono"></i></a></li>
                     <li class="nav-item nav-item-icon"><a class="nav-link" href="#"><i
-                                class="fa-brands fa-twitter nav_icono"></i> </a></li>
+                                class="fa-brands fa-twitter nav_icono"></i></a></li>
                     <li class="nav-item nav-item-icon"><a class="nav-link" href="#"><i
-                                class="fa-brands fa-youtube nav_icono"></i> </a></li>
+                                class="fa-brands fa-youtube nav_icono"></i></a></li>
                     <li class="nav-item nav-item-icon"><a class="nav-link" href="#"><i
-                                class="fa-brands fa-instagram nav_icono"></i> </a></li>
+                                class="fa-brands fa-instagram nav_icono"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -139,7 +138,7 @@
             </div>
         </section>
 
-        <section class="sect_personal">
+        <section id="quienes_somos" class="sect_personal">
             <div>
                 <div class="row align-items-center personal_div">
                     <div class="col-md-6 personal_texto">
@@ -226,7 +225,7 @@
         </section>
 
         <!-- Nueva Sección con Imágenes -->
-        <section class="section_imagenes text-center py-5">
+        <section id="eventos" class="section_imagenes text-center py-5">
             <div class="Eventos">
                 <h2>Eventos</h2> <br>
             </div>
@@ -258,12 +257,15 @@
                 </div>
             </div>
         </section>
-
         <!-- Modal Imagen 1 -->
         <div class="modal fade modal-imagen modal-imagen1" id="modalImagen1" tabindex="-1"
-            aria-labelledby="modalImagen1Label" aria-hidden="true">
+            aria-labelledby="modalImagen1Label" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalImagen1Label">Maratón de lectura</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-12 col-md-6 mb-3">
@@ -290,19 +292,13 @@
                             </div>
                             <div class="col-12 col-md-6">
                                 <div class="modal_texto">
-                                    <h5>Maratón de lectura</h5>
                                     <p>Periódicamente, realizamos maratones de lectura entre nuestros estudiantes,
-                                        incentivando el espíritu de leer y aprender nuevos conocimientos. Estos
-                                        eventos
-                                        son una oportunidad para que los estudiantes se sumergan en libros
-                                        interesantes,
-                                        participen en discusiones sobre los temas leídos y compartan sus
-                                        experiencias
+                                        incentivando el espíritu de leer y aprender nuevos conocimientos. Estos eventos
+                                        son una oportunidad para que los estudiantes se sumergan en libros interesantes,
+                                        participen en discusiones sobre los temas leídos y compartan sus experiencias
                                         con otros lectores apasionados. Además, los maratones de lectura ayudan a
-                                        fomentar el hábito de la lectura como una actividad placentera y
-                                        enriquecedora,
-                                        promoviendo una cultura de aprendizaje continuo y amor por la literatura.
-                                    </p>
+                                        fomentar el hábito de la lectura como una actividad placentera y enriquecedora,
+                                        promoviendo una cultura de aprendizaje continuo y amor por la literatura.</p>
                                 </div>
                             </div>
                         </div>
@@ -313,9 +309,13 @@
 
         <!-- Modal Imagen 2 -->
         <div class="modal fade modal-imagen modal-imagen2" id="modalImagen2" tabindex="-1"
-            aria-labelledby="modalImagen2Label" aria-hidden="true">
+            aria-labelledby="modalImagen2Label" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalImagen2Label">Torneos de ajedrez</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-12 col-md-6 mb-3 espacio">
@@ -342,16 +342,12 @@
                             </div>
                             <div class="col-12 col-md-6">
                                 <div class="modal_texto">
-                                    <h5>Torneos de ajedrez</h5>
                                     <p>Realizamos torneos de ajedrez entre nuestros estudiantes, proporcionando un
                                         entorno competitivo y divertido que estimula el pensamiento estratégico y la
                                         toma de decisiones. Estos torneos permiten a los estudiantes demostrar sus
-                                        habilidades en el juego y también aprender de sus compañeros. Además,
-                                        fomentan
-                                        un espíritu de camaradería y respeto mutuo entre los participantes. Los
-                                        torneos
-                                        de ajedrez no solo son una excelente forma de desarrollar habilidades
-                                        mentales,
+                                        habilidades en el juego y también aprender de sus compañeros. Además, fomentan
+                                        un espíritu de camaradería y respeto mutuo entre los participantes. Los torneos
+                                        de ajedrez no solo son una excelente forma de desarrollar habilidades mentales,
                                         sino también una oportunidad para construir amistades y disfrutar de un
                                         pasatiempo compartido.</p>
                                 </div>
@@ -364,9 +360,13 @@
 
         <!-- Modal Imagen 3 -->
         <div class="modal fade modal-imagen modal-imagen3" id="modalImagen3" tabindex="-1"
-            aria-labelledby="modalImagen3Label" aria-hidden="true">
+            aria-labelledby="modalImagen3Label" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalImagen3Label">Ferias de ciencias</h5> 
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-12 col-md-6 mb-3">
@@ -391,23 +391,16 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 ">
+                            <div class="col-12 col-md-6">
                                 <div class="modal_texto">
-                                    <h5>Ferias de ciencias</h5>
                                     <p>Nuestras ferias de ciencias brindan una plataforma para que los estudiantes
                                         presenten proyectos innovadores y creativos en diversas áreas de la ciencia.
-                                        Estos eventos permiten a los estudiantes aplicar sus conocimientos y
-                                        habilidades
-                                        en la resolución de problemas reales, promoviendo el aprendizaje práctico y
-                                        el
-                                        pensamiento crítico. Las ferias de ciencias también ofrecen una oportunidad
-                                        para
-                                        que los estudiantes se conecten con sus compañeros y profesores, compartan
-                                        ideas
-                                        y se inspiren mutuamente. Además, estos eventos contribuyen a fomentar un
-                                        mayor
-                                        interés en las ciencias y en el desarrollo de futuras carreras en el campo.
-                                    </p>
+                                        Estos eventos permiten a los estudiantes aplicar sus conocimientos y habilidades
+                                        en la resolución de problemas reales, promoviendo el aprendizaje práctico y el
+                                        pensamiento crítico. Las ferias de ciencias también ofrecen una oportunidad para
+                                        que los estudiantes se conecten con sus compañeros y profesores, compartan ideas
+                                        y se inspiren mutuamente. Además, estos eventos contribuyen a fomentar un mayor
+                                        interés en las ciencias y en el desarrollo de futuras carreras en el campo.</p>
                                 </div>
                             </div>
                         </div>
@@ -417,7 +410,7 @@
         </div>
 
 
-        <section class="section_mision">
+        <section id="valores" class="section_mision">
             <div class="section_mision_sub">
             </div>
             <div class="section_botones">
@@ -444,7 +437,7 @@
             </div>
         </section>
 
-        <section class="section_escolar">
+        <section id="niveles" class="section_escolar">
             <div class="escolar_div">
                 <h2>Conoce nuestra Metodología por Niveles Educativos</h2>
                 <div class="grados">
@@ -464,7 +457,7 @@
             </div>
         </section>
 
-        <section class="section_deportes">
+        <section id="deportes" class="section_deportes">
             <div class="deportes_div">
                 <h2>Deportes</h2>
                 <div class="deportes">
@@ -631,7 +624,7 @@
             </div>
         </div>
 
-        <div class="footer_derechos">
+        <div id="documentos" class="footer_derechos">
             <div class="foot_der_logo">
                 <a href="https://youtube.com">
                     <img class="foor_der_lo_img" src="imagenes/logo_naciones_unidas.png" alt="">
