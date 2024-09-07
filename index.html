@@ -68,7 +68,6 @@
         </div>
     </nav>
 
-
     <main>
 
 
@@ -153,7 +152,7 @@
                             a los avances tecnológicos, siendo consecuentes del uso y cuidado del planeta.
                         </p>
                         <div class="personal_texto_boton">
-                            <button value="conoce mas">Conoce Mas</button>
+                            <a href="#eventos"><button value="conoce mas">Conoce Mas</button></a>
                         </div>
                     </div>
                     <div id="carouselExampleIndicators" class="carousel slide col-md-6" data-bs-ride="carousel">
@@ -364,7 +363,7 @@
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="modalImagen3Label">Ferias de ciencias</h5> 
+                        <h5 class="modal-title" id="modalImagen3Label">Ferias de ciencias</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -412,6 +411,7 @@
 
         <section id="valores" class="section_mision">
             <div class="section_mision_sub">
+                <h2>Mision y Vision</h2>
             </div>
             <div class="section_botones">
                 <button class="btn-grande" onclick="mostrarMision()">
@@ -482,6 +482,19 @@
         </section>
 
         <section class="section_video text-center my-4">
+            <div class="foot_info_mapa foot_info_es">
+                <div class="info_titulo">
+                    <h4>Nos puede ubicar:</h4>
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3789.3485558670773!2d-76.97584226971267!3d-12.1541766463751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b85b5cd94a35%3A0x7e23e69fdbdd8da2!2sInstituci%C3%B3n%20Educativa%207062%20Naciones%20Unidas!5e0!3m2!1ses-419!2spe!4v1724643525271!5m2!1ses-419!2spe"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <br>
+                <a class="inf-tit-map" href="https://maps.app.goo.gl/X2yZuXY7S9vCBws29" target="_blank"> Ver en Google
+                    Maps</a><!-- poner el mapa -->
+                <p><strong>I.E.P. Naciones Unidas - 7062</strong> </p>
+            </div>
             <video class="utp" width="640" height="360" controls>
                 <source src="imagenes/colegio.mp4" type="video/mp4">
             </video>
@@ -536,9 +549,9 @@
 
     <footer>
         <div class="footer_informacion">
-            <div class="foot_info_mapa foot_info_es">
+            <!--<div class="foot_info_mapa foot_info_es">
                 <div class="info_titulo">
-                    <h4>Ubicanos</h4>
+                    <h4>Ubícanos</h4>
                 </div>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3789.3485558670773!2d-76.97584226971267!3d-12.1541766463751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b85b5cd94a35%3A0x7e23e69fdbdd8da2!2sInstituci%C3%B3n%20Educativa%207062%20Naciones%20Unidas!5e0!3m2!1ses-419!2spe!4v1724643525271!5m2!1ses-419!2spe"
@@ -546,63 +559,89 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <br>
                 <a class="inf-tit-map" href="https://maps.app.goo.gl/X2yZuXY7S9vCBws29" target="_blank"> Ver en Google
-                    Maps</a><!-- poner el mapa -->
+                    Maps</a> poner el mapa 
                 <p><strong>I.E.P. Naciones Unidas - 7062</strong> </p>
-            </div>
+            </div>-->
 
             <div class="foot_info_horarios foot_info_es">
                 <div class="info_hor_titulo info_titulo">
-                    <h4>Contactanos</h4> <!-- Podemos poner una tabla con horario direccion,etc -->
+                    <h4>Contáctanos</h4> <!-- Podemos poner una tabla con horario direccion,etc -->
                 </div>
                 <div class="info_hor_tablas">
                     <table class="hor_tablas">
                         <tr>
-                            <td>Horario de <br>atencion</td>
+                            <td><strong>Horario de <br>atención</strong></td>
                             <td>:</td>
-                            <td><strong>De lunes a viernes 07:00 a.m. a 04:00 p.m.</strong> </td>
+                            <td class="cl_d">De lunes a viernes 07:00 a.m. a 04:00 p.m.</td>
                         </tr>
                         <tr>
-                            <td>Direccion </td>
+                            <td><strong>Dirección</strong></td>
                             <td>:</td>
-                            <td><strong>Av. San Juan Mz.C Lt.8, Surco, Lima - Perú</strong></td>
+                            <td class="cl_d">Av. San Juan Mz.C Lt.8, Surco, Lima - Perú</td>
                         </tr>
                         <tr>
-                            <td>Central <br>telefónica</td>
+                            <td><strong>Central <br>telefónica</strong></td>
                             <td>:</td>
-                            <td><strong>(+51) 999-8181</strong></td>
+                            <td class="cl_d">(+51) 999-8181</td>
                         </tr>
                         <tr>
-                            <td>RUC</td>
+                            <td><strong>RUC</strong></td>
                             <td>:</td>
-                            <td><strong>19923892011</strong></td>
+                            <td class="cl_d">19923892011</td>
                         </tr>
                         <tr>
-                            <td>Razon Social </td>
+                            <td><strong>Razón Social</strong></td>
                             <td>:</td>
-                            <td><strong>Colegio de Naciones Unidas - 7062</strong></td>
+                            <td class="cl_d">Colegio de Naciones Unidas - 7062</td>
                         </tr>
                     </table>
                 </div>
             </div>
-            <div class="foot_info_politicas foot_info_es">
+            <div class="foot_info_enlaces foot_info_es">
                 <div class="info_hor_titulo info_titulo">
-                    <h4>Enlaces y Politicas</h4>
+                    <h4>Enlaces</h4>
                 </div>
                 <ul class="inf_titu_li">
                     <li><a href="#">Inscribete</a></li>
                     <li><a href="#">Documentos</a></li>
-                    <li><a href="#">Alquiler de Ambientes</a></li>
-                    <br>
-                    <li><a href="#">Politica de calidad</a></li>
-                    <li><a href="#"><img class="pol_cal" src="imagenes/pol_calidad.png"></a></li>
-                    <li><a href="#">Libro de Reclamaciones</a></li>
-                    <li><a href="#"><img class="lib_rec" src="imagenes/lib_reclamaciones.jpg"></a></li>
+                    <li><a href="#">Alquiler de ambientes</a></li>
                 </ul>
             </div>
-            <div class="foot_info_redes foot_info_es ">
-                <div class="info_titulo">
-                    <h4>Redes Sociales</h4>
+            <div class="foot_info_politicas foot_info_es">
+                <div class="info_hor_titulo info_titulo">
+                    <h4>Políticas de Calidad</h4>
                 </div>
+                <ul class="inf_titu_li">
+                    <li><a href="#">Política de calidad</a></li>
+                    <li><a href="#">Libro de Reclamaciones</a></li>
+                    <li><a href="#">Normas de convivencia</a></li>
+                </ul>
+            </div>
+            <div class="foot_info_es ">
+
+
+                <div class="info_titulo">
+                    <h4>Accesos Rapidos</h4>
+                </div>
+                <ul class="inf_titu">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Propuesta Educativa</a></li>
+                    <li><a href="#">Admisión</a></li>
+                    <li><a href="#">Contáctanos </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="documentos" class="footer_derechos">
+
+            <div class="foot_info_redes foot_der_texto">
+
+                <p>
+                    2024 - Todos los Derechos Reservados
+                </p>
+
+            </div>
+            <div class="foot_info_redes">
                 <div class="foot_red_icons">
                     <ul class="foot_red_li">
                         <li><a href="#"><i class="fa-brands fa-facebook-f foot_icono"></i></a></li>
@@ -611,33 +650,10 @@
                         <li><a href="#"><i class="fa-brands fa-youtube foot_icono"></i></a></li>
                     </ul>
                 </div>
-
-                <div class="info_titulo">
-                    <h4>Accesos Rapidos</h4>
-                </div>
-                <ul class="inf_titu">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Propuesta Educativa</a></li>
-                    <li><a href="#">Admision</a></li>
-                    <li><a href="#">Contactanos</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div id="documentos" class="footer_derechos">
-            <div class="foot_der_logo">
-                <a href="https://youtube.com">
-                    <img class="foor_der_lo_img" src="imagenes/logo_naciones_unidas.png" alt="">
-                </a>
-            </div>
-
-            <div class="foot_der_texto">
-                <p>
-                    2024 - Todos los Derechos Reservados
-                </p>
             </div>
         </div>
     </footer>
+
     <!--<a href="#" class="btn btn-primary">hola </a>-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
