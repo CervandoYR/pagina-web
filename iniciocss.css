@@ -1,8 +1,9 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  overflow-x: hidden;
+  overflow-y: auto;
   /* Previene el desbordamiento horizontal */
+
 }
 
 /* Navbar */
@@ -39,6 +40,7 @@ body {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  text-align: center;
 }
 
 /* Links */
@@ -168,12 +170,14 @@ body {
   display: flex;
   flex-direction: column;
   max-height: 90vh;
+  overflow-y: auto;
 
 }
 
 .modal-body {
   padding: 0;
   overflow: hidden;
+  
 }
 
 
