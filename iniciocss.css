@@ -1069,12 +1069,17 @@ box-sizing: border-box;
 .info_titulo h4{
   font-size: 20px;
   font-weight: 900 ;
-  color: black;
+  color: white;
 }
 
 td{
   color: black;
 }
+
+.cl_t{
+  color: white;
+}
+
 .cl_d{
   color: white;
 }
@@ -1146,12 +1151,12 @@ td:nth-child(3) {
 
 .inf_titu_li li::before {
   content: "\f0da"; 
+  color: white;
   font-family: "Font Awesome 5 Free"; 
   font-weight: 900; 
   position: absolute;
   left: 0;
   top: 0;
-  color: black; 
 }
 
 
@@ -1241,7 +1246,7 @@ td:nth-child(3) {
   background-color: rgb(14, 31, 182);
   font-size: 15px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around ;
   align-items: center;
   line-height: 25px;
   width: 100%;
